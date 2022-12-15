@@ -34,9 +34,13 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("com.h2database:h2:1.4.200")
+	implementation("org.springdoc:springdoc-openapi-data-rest:1.6.13")
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.13")
+	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.13")
 
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.mockk:mockk:1.4.2")
 }
 
 tasks.withType<KotlinCompile> {
